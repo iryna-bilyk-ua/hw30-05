@@ -27,6 +27,9 @@ describe('Registration', () => {
      cy.visit('https://automationteststore.com/index.php?rt=account/login'); 
      cy.get('#loginFrm_loginname').type('irynabilyk12345');
      cy.get('#loginFrm_password').type('1234567890');
-     cy.get('#loginFrm > fieldset > button').click();
+     cy.get('button[type="submit"]').contains('Login').click();
   }); 
 });
+
+
+
